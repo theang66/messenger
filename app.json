@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "messenger",
-    "slug": "chat",
+    "slug": "messenger",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
