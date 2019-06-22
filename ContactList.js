@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Text } from 'react-native';
 
 class ContactList extends Component {
   static navigationOptions = {
@@ -7,7 +8,7 @@ class ContactList extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <h1>This is the contact list</h1>
+      <Text>This is the contact list</Text>
     );
   }
 }

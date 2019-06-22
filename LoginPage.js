@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View, TextInput, Button } from 'react-native';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 
@@ -15,6 +15,9 @@ class LoginPage extends Component {
   static navigationOptions = {
     title: 'Login',
   };
+  onPressSignIn = () => {
+    this.props.navigation.navigate('Contacts');
+  }
   render() {
     const {navigate} = this.props.navigation;
     return (
@@ -24,7 +27,7 @@ class LoginPage extends Component {
         <TextInput style={{height: 40, width: 100, borderColor: 'gray', borderWidth: 1}} />
         <Text>Password</Text>
         <TextInput style={{height: 40, width: 100, borderColor: 'gray', borderWidth: 1}} />
-        <Button title="Sign In" />
+        <Button onPress={this.onPressSignIn} title="Sign In" />
       </View>
     );
   }
