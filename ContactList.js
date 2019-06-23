@@ -11,10 +11,7 @@ class ContactList extends Component {
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <div>
-        <Text>Contact 1</Text>
-        <Button onPress={this.onPressSignIn} title="Contact 1" />
-      </div>
+      <Button onPress={this.onPressSignIn} title="Contact 1" />
     );
   }
 }

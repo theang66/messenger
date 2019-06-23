@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LoginPage from './LoginPage';
 import ContactList from './ContactList';
+import ChatScreen from './ChatScreen';
 import {createStackNavigator, createAppContainer} from 'react-navigation';
 
 const MainNavigator = createStackNavigator({
