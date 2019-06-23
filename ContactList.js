@@ -1,14 +1,20 @@
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Text, Button } from 'react-native';
 
 class ContactList extends Component {
   static navigationOptions = {
     title: 'Contacts',
   };
+  onPressSignIn = () => {
+    this.props.navigation.navigate('Chat');
+  }
   render() {
     const {navigate} = this.props.navigation;
     return (
-      <Text>This is the contact list</Text>
+      <div>
+        <Text>Contact 1</Text>
+        <Button onPress={this.onPressSignIn} title="Contact 1" />
+      </div>
     );
   }
 }

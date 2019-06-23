@@ -6,6 +6,7 @@ import {createStackNavigator, createAppContainer} from 'react-navigation';
 const MainNavigator = createStackNavigator({
   Login: {screen: LoginPage},
   Contacts: {screen: ContactList},
+  Chat: {screen: ChatScreen}
 });
 
 const App = createAppContainer(MainNavigator);
