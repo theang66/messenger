@@ -22,7 +22,7 @@ class LoginPage extends Component {
     const {navigate} = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Text>Sign In</Text>
+        <Text>Welcome!</Text>
         <Text>Username</Text>
         <TextInput style={{height: 40, width: 100, borderColor: 'gray', borderWidth: 1}} />
         <Text>Password</Text>
