@@ -6,15 +6,12 @@ class ContactList extends Component {
   static navigationOptions = {
     title: 'Contacts',
   };
-  onPressChat = () => {
-    this.props.navigation.navigate('Chat');
-  }
   render() {
     const {navigate} = this.props.navigation;
     return (
       <View>
-        <Button title="Contact 1" onPress={this.onPressChat} />
-        <Button title="Contact 2" onPress={this.onPressChat} />
+        <Button title="Contact 1" onPress={() => navigate('Chat', {title: "Contact 1"})} />
+        <Button title="Contact 2" onPress={() => navigate('Chat', {title: "Contact 2"})} />
       </View>
     );
   }
