@@ -15,7 +15,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: offset,
     borderColor: '#111111',
     borderWidth: 1,
-  },
+},
 });
 
 class LoginPage extends Component {
